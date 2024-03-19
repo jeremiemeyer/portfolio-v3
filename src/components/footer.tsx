@@ -176,7 +176,7 @@ export default function Footer() {
             © {new Date().getFullYear()}{" "}
             <a
               target="_blank"
-              href={siteConfig.links.personal}
+              href="jeremiemeyer.fr"
               className="hover:text-black dark:hover:text-zinc-200 transition-all"
             >
               Jeremie Meyer
