@@ -59,7 +59,7 @@ export default function Contact() {
                 >
                   <a
                     className="cursor-pointer hover:text-black dark:hover:text-zinc-200 transition-all"
-                    href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_MAIL}`}
+                    href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}
                   >{`${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}</a>
                 </CopyInfo>
               </li>

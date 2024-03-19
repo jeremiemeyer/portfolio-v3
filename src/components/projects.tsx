@@ -100,20 +100,22 @@ const Projects = () => {
           <span className="hidden md:block">Client</span>
           <span>Year</span>
         </div>
-        {projects.map((project) => (
-          <ProjectElement
-            project={project}
-            isSelected={selectedProject === project.id}
-            isExpanded={expandedProject === project.id}
-            onProjectHover={() => setSelectedProject(project.id)}
-            onProjectMouseLeave={() => setSelectedProject(null)}
-            onExpandProject={() =>
-              setExpandedProject(
-                expandedProject !== project.id ? project.id : null
-              )
-            }
-          />
-        ))}
+        <div onMouseLeave={() => setSelectedProject(null)}>
+          {projects.map((project) => (
+            <ProjectElement
+              project={project}
+              isSelected={selectedProject === project.id}
+              isExpanded={expandedProject === project.id}
+              onProjectHover={() => setSelectedProject(project.id)}
+              onProjectMouseLeave={() => setSelectedProject(null)}
+              onExpandProject={() =>
+                setExpandedProject(
+                  expandedProject !== project.id ? project.id : null
+                )
+              }
+            />
+          ))}
+        </div>
       </MaxWidthWrapper>
     </>
   )
