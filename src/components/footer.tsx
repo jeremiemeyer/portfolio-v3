@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 
-import { siteConfig } from "@/../config/site"
 import useModal from "@/hooks/use-modal"
 import { H2 } from "./form"
 import { ModeToggle } from "./mode-toggle"
