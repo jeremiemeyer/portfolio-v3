@@ -60,7 +60,7 @@ export const worksans = Rubik({
 
 })
 
-export const sourcecodepro = Karla({
+export const sourcecodepro = Ibarra_Real_Nova({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-sourcecodepro",
