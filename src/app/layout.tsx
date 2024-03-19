@@ -22,14 +22,17 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <html lang="fr">
+      <html lang="en">
+        <head>
+          <meta name="theme-color" content="#000" />
+        </head>
         <body
           className={`${worksans.className} ${sourcecodepro.variable} text-zinc-800 dark:text-zinc-200`}
         >
           <Providers>
             <MaxWidthWrapper>
               <Navbar />
-              <ProjectsOverlay />
+              {/* <ProjectsOverlay /> */}
               <ModalProvider />
               {children}
               <Separator />
