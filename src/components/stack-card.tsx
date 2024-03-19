@@ -33,7 +33,7 @@ const StackCard = ({ stackElement, handleTagClick }: StackCardProps) => {
               <Badge
                 key={tagEl} // Don't forget to add a unique key for each element in a list
                 onClick={() => handleTagClick(tagEl)}
-                className="bg-black hover:bg-zinc-900 dark:bg-zinc-400 dark:hover:bg-zinc-300 cursor-pointer inline-block"
+                className="bg-black hover:bg-zinc-900 dark:bg-zinc-400 dark:hover:bg-zinc-300 cursor-pointer inline-block font-light"
               >
                 {tagEl}
               </Badge>
