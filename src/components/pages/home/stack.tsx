@@ -32,7 +32,7 @@ export default function Stack() {
       <SectionCard>
         <div className="flex flex-col items-center gap-2">
           {/* Filter  */}
-          <div className="bg-blur text-zinc-400 dark:text-zinc-400 dark:bg-zinc-800/70 border border-zinc-400 border-opacity-20 dark:border-zinc-800 rounded-full select-none mx-auto">
+          <div className="bg-blur px-1 py-1 text-zinc-400 dark:text-zinc-400 dark:bg-zinc-800/70 border border-zinc-400 border-opacity-20 dark:border-zinc-800 rounded-full select-none mx-auto">
             <div className="flex justify-between mx-auto text-sm">
               <span
                 role="button"
