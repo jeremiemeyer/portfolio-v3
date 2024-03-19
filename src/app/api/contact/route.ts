@@ -1,4 +1,3 @@
-import { sendMail } from "@/components/pages/contact/sendMail"
 import MailService from "@/services/mail-service"
 
 export const POST = async (req: Request) => {

@@ -1,7 +1,7 @@
 import React from "react"
 import config from "@/config"
-import type { Project } from "@/config/projects"
-import ProjectPage from "@/components/pages/realisations/project-page"
+// import type { Project } from "@/config/projects"
+// import ProjectPage from "@/components/pages/realisations/project-page"
 
 export const revalidate = 86400
 
@@ -18,27 +18,13 @@ export async function generateStaticParams() {
   if (!projects) return []
 
   return projects.map((project) => ({
-    slug: project.slug,
+    slug: project.id,
   }))
 }
 
-export async function generateMetadata({ params: { slug } }: Props) {
-  const project: Project | undefined = projects.find(
-    (project: Project) => project.slug === slug
-  )
-  if (!project) {
-    return {
-      title: "Projet introuvable | Jeremie Meyer",
-    }
-  }
 
-  return {
-    title: `${project.title} | Jeremie Meyer`,
-  }
-}
-
-export default function page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   return (
-      <ProjectPage params={params} />
+      <p></p>
   )
 }

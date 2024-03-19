@@ -4,6 +4,3 @@ Allow: /
 
 # Host
 Host: https://www.jeremiemeyer.fr
-
-# Sitemaps
-Sitemap: https://www.jeremiemeyer.fr/sitemap.xml

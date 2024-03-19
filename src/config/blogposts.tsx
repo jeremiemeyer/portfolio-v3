@@ -1,9 +1,4 @@
-import { Maybe, Tuple } from "../types"
-import { Stack } from "./stack"
 import React from "react"
-import { H1, H2, H3 } from "@/components/form"
-import HeadingText from "@/components/common/heading-text"
-
 
 export interface BlogPostSubSection {
     title: string

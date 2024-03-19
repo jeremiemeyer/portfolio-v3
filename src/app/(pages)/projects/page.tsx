@@ -1,5 +1,4 @@
 import HeadingText from "@/components/common/heading-text"
-import ProjectsList from "@/components/pages/realisations/projects-list"
 
 export const revalidate = 86400
 

@@ -1,8 +1,9 @@
 import { contact, Contact } from "./contact"
-import { Project, projects } from "./projects"
 import { BlogPost, blogposts } from "./blogposts"
+import { Project } from "@/types"
+import { projects } from "./projects"
 
-interface Config {
+export interface Config {
   contact: Contact
   projects: Project[]
   blogposts: BlogPost[]

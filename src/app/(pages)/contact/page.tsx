@@ -1,11 +1,8 @@
-import ContactForm from "@/components/shared/contact-form"
-import SocialMediaIcons from "@/components/common/social-media-icons"
 import HeadingText from "@/components/common/heading-text"
-import FadeInOnEntry from "@/components/animations/fade-in-on-entry"
 import SectionCard from "@/components/pages/home/section-card"
-import { Mail, Phone } from "lucide-react"
-import CopyEmail from "@/components/shared/copy-info"
+import ContactForm from "@/components/shared/contact-form"
 import CopyInfo from "@/components/shared/copy-info"
+import { Mail, Phone } from "lucide-react"
 
 export const metadata = {
   title: "Contact | Jeremie Meyer",

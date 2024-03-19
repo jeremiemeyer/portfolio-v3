@@ -1,5 +1,4 @@
 import { getPostsMeta, getPostByName } from "@/lib/posts"
-import Link from "next/link"
 import { notFound } from "next/navigation"
 import getFormattedDate from "@/lib/utils"
 import BlogArticle from "@/components/pages/blog/blog-article"
