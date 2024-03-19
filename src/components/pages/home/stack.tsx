@@ -16,8 +16,10 @@ export default function Stack() {
   const [keyCounter, setKeyCounter] = useState(0) // Counter to force re-render
 
   const handleFilterChange = (filter: StackTags | "all") => {
-    setSelectedFilter(filter)
-    setKeyCounter((prevCounter) => prevCounter + 1)
+    if (filter !== selectedFilter) {
+      setSelectedFilter(filter)
+      setKeyCounter((prevCounter) => prevCounter + 1)
+    }
   }
 
   const filteredStack: StackElement[] = useMemo(() => {
