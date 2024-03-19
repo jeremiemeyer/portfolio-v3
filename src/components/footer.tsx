@@ -146,9 +146,9 @@ export default function Footer() {
     <footer>
       <div className="mx-auto p-6 md:py-8">
         <div className="flex flex-col md:flex-row sm:items-center justify-between gap-2">
-          <Link href="/" className="text-2xl font-bold font-typewriter">
+          {/* <Link href="/" className="text-2xl font-bold font-typewriter">
             jm
-          </Link>
+          </Link> */}
           <ul className="flex flex-col md:flex-row mb-6 text-zinc-500 dark:text-zinc-400 sm:mb-0 gap-2 md:gap-6">
             {footerModals.map((footerModal) => (
               <li

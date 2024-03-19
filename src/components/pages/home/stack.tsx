@@ -32,7 +32,7 @@ export default function Stack() {
       <SectionCard>
         <div className="flex flex-col items-center gap-2">
           {/* Filter  */}
-          <div className="bg-blur px-1 py-1 text-zinc-400 dark:text-zinc-400 dark:bg-zinc-800/70 border border-zinc-400 border-opacity-20 dark:border-zinc-800 rounded-full select-none mx-auto">
+          <div className="bg-blur text-zinc-400 dark:text-zinc-400 dark:bg-zinc-800/70 border border-zinc-400 border-opacity-20 dark:border-zinc-800 rounded-full select-none mx-auto">
             <div className="flex justify-between mx-auto text-sm">
               <span
                 role="button"
@@ -101,7 +101,7 @@ export default function Stack() {
 
           {/* Results  */}
           <div className="mt-4">
-            <Spotlight className="mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start max-w-none group">
+            <Spotlight className="mx-auto grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start max-w-none group">
               {filteredStack.map((stackEl, index) => (
                 <FadeInIndex key={`${stackEl.id}_${keyCounter}`} index={index}>
                   <SpotlightCard>

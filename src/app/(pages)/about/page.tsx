@@ -19,7 +19,7 @@ const Page = () => {
           height={120}
         />
       </SectionCard>
-      <Timeline />
+      {/* <Timeline /> */}
     </>
   )
 }
