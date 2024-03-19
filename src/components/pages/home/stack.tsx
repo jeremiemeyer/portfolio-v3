@@ -100,8 +100,8 @@ export default function Stack() {
           </div>
 
           {/* Results  */}
-          <div className="mt-4">
-            <Spotlight className="mx-auto grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start max-w-none group">
+          <div className="mt-4 w-full">
+            <Spotlight className="mx-auto w-full grid gap-2 grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 items-start max-w-none group">
               {filteredStack.map((stackEl, index) => (
                 <FadeInIndex key={`${stackEl.id}_${keyCounter}`} index={index}>
                   <SpotlightCard>

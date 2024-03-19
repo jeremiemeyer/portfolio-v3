@@ -24,7 +24,7 @@ const FadeInIndex = ({ index, children }: FadeInIndexProps) => {
         duration: 0.5,
       }}
       viewport={{ amount: 0 }}
-      className="max-w-sm rounded relative w-full h-full"
+      className="rounded relative w-full h-full"
     >
       {children}
     </motion.div>
