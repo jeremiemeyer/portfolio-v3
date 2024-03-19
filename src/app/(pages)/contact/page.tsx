@@ -18,9 +18,9 @@ export default function Contact() {
       </div>
       {/* <SocialMediaIcons /> */}
       <SectionCard className="flex flex-col md:max-w-4xl space-y-6 md:space-x-4 md:space-y-0 md:flex-row items-center text-zinc-800 dark:text-zinc-400">
-        <div className="md:w-2/4 flex flex-row sm:flex-col items-center text-center md:text-left mx-6 gap-6">
+        <div className="md:w-2/4 flex flex-row md:flex-col items-center text-center md:text-left mx-6 gap-6">
           <Image
-            className="hover:grayscale-0 overlay-btn rounded-full bg-white group-hover:bg-blue-50 dark:bg-zinc-900/40 dark:group-hover:bg-zinc-900/70 group-hover:scale-105 transition-all"
+            className="hidden sm:block hover:grayscale-0 overlay-btn rounded-full bg-white group-hover:bg-blue-50 dark:bg-zinc-900/40 dark:group-hover:bg-zinc-900/70 group-hover:scale-105 transition-all"
             src="/static/pic-no-bg-bw.webp"
             alt="profile pic"
             width={120}
