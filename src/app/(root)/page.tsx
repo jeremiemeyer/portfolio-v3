@@ -10,6 +10,7 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper"
 import { Separator } from "@/components/ui/separator"
 import ZoomParallax from "@/components/animations/zoom-parallax"
 import Projects from "@/components/projects"
+import About from "@/components/about"
 
 export const metadata = {
   title: {
@@ -63,7 +64,7 @@ export const viewport: Viewport = {
 }
 
 export default function Home() {
-  const components = [<Projects />, <Stack />, <ZoomParallax />, <Contact />]
+  const components = [<About />, <Projects />, <Stack />, <Contact />]
 
   return (
     <>

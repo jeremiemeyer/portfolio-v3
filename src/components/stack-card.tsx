@@ -9,7 +9,7 @@ interface StackCardProps {
 
 const StackCard = ({ stackElement, handleTagClick }: StackCardProps) => {
   return (
-    <div className="relative aspect-[1/1] sm:aspect-[1/1] md:aspect-[3/2]  h-full w-full bg-zinc-50 dark:bg-black p-6 rounded-[inherit] z-20 overflow-hidden">
+    <div className="relative aspect-[1/1] sm:aspect-[6/5] md:aspect-[12/6] lg:aspect-[12/7] xl:aspect-[12/6] h-full w-full bg-zinc-50 dark:bg-black p-4 rounded-[inherit] z-20 overflow-hidden">
       <div className="grid w-full md:grid-cols-[30%_70%] h-full md:grid-flow-col">
         {/* Left side */}
         <div className="flex mx-auto my-auto md:mx-2 md:my-2">

@@ -56,7 +56,7 @@ import {
 
 export const worksans = Rubik({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500", "700"],
 
 })
 

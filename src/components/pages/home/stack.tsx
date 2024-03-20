@@ -106,7 +106,7 @@ export default function Stack() {
             <Spotlight className="mx-auto w-full grid gap-2 grid-cols-2 lg:grid-cols-3 items-start max-w-none group">
               {filteredStack.map((stackEl, index) => (
                 <FadeInIndex key={`${stackEl.id}_${keyCounter}`} index={index}>
-                  <SpotlightCard className="aspect-[1/1] sm:aspect-[1/1] md:aspect-[3/2]">
+                  <SpotlightCard className="aspect-[1/1] sm:aspect-[6/5] md:aspect-[12/6] lg:aspect-[12/7] xl:aspect-[12/6]">
                     <StackCard
                       stackElement={stackEl}
                       handleTagClick={handleFilterChange}

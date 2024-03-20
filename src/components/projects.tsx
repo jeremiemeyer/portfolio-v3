@@ -5,6 +5,7 @@ import { projects } from "@/config/projects"
 import { Project } from "@/types"
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
+import FadeInIndex from "./animations/fade-in-index"
 
 interface ProjectElementProps {
   project: Project
@@ -93,7 +94,6 @@ const Projects = () => {
   return (
     <>
       <MaxWidthWrapper>
-        <HeadingText title="Projects" className="mb-4" />
         <div className="grid grid-cols-[80%_20%] md:grid-cols-[30%_30%_30%_10%]  text-zinc-400 uppercase text-sm mb-4 px-4 font-light">
           <span>Project</span>
           <span className="hidden md:block">Category</span>
@@ -101,19 +101,21 @@ const Projects = () => {
           <span>Year</span>
         </div>
         <div onMouseLeave={() => setSelectedProject(null)}>
-          {projects.map((project) => (
-            <ProjectElement
-              project={project}
-              isSelected={selectedProject === project.id}
-              isExpanded={expandedProject === project.id}
-              onProjectHover={() => setSelectedProject(project.id)}
-              onProjectMouseLeave={() => setSelectedProject(null)}
-              onExpandProject={() =>
-                setExpandedProject(
-                  expandedProject !== project.id ? project.id : null
-                )
-              }
-            />
+          {projects.map((project, i) => (
+            <FadeInIndex index={i}>
+              <ProjectElement
+                project={project}
+                isSelected={selectedProject === project.id}
+                isExpanded={expandedProject === project.id}
+                onProjectHover={() => setSelectedProject(project.id)}
+                onProjectMouseLeave={() => setSelectedProject(null)}
+                onExpandProject={() =>
+                  setExpandedProject(
+                    expandedProject !== project.id ? project.id : null
+                  )
+                }
+              />
+            </FadeInIndex>
           ))}
         </div>
       </MaxWidthWrapper>
