@@ -11,13 +11,19 @@ const Page = () => {
         <HeadingText title="About" subtext="let's get acquainted" />
       </div>
       <SectionCard className="max-w-2xl flex flex-row">
-        <Image
-          className="hover:grayscale-0 overlay-btn rounded-full bg-white group-hover:bg-blue-50 dark:bg-zinc-900/40 dark:group-hover:bg-zinc-900/70 group-hover:scale-105 transition-all"
-          src="/static/pic-no-bg-bw.webp"
-          alt="profile pic"
-          width={120}
-          height={120}
-        />
+
+        <div className="flex flex-col gap-2 font-light dark:text-zinc-200">
+          <p>
+            I'm a passionate front-end developer based in France, specializing
+            in crafting captivating websites and web apps using React, Next.js.
+          </p>
+          <p>
+            With a keen eye for design and a knack for problem-solving, I strive
+            to deliver engaging digital experiences that leave a lasting
+            impression.
+          </p>
+          <p>Let's create something amazing together.</p>
+        </div>
       </SectionCard>
       {/* <Timeline /> */}
     </>
