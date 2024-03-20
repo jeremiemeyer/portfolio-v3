@@ -22,7 +22,7 @@ const StackCard = ({ stackElement, handleTagClick }: StackCardProps) => {
         >
           <div className="space-y-2 flex mx-auto sm:block">
             <h2 className={`font-typewriter text-md sm:text-xl mt-2 lg:mt-0`}>{stackElement.label}</h2>
-            <p className="hidden sm:flex text-zinc-600 dark:text-zinc-400 text-sm">
+            <p className="hidden sm:flex text-zinc-600 dark:text-zinc-500 text-sm">
               {stackElement.description}
             </p>
           </div>

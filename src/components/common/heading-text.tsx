@@ -18,7 +18,7 @@ export default function HeadingText({
   return (
     <>
       <div className={cn("mb-8", className)}>
-        <h1 className="text-2xl leading-9 tracking-tight text-zinc-900 dark:text-zinc-200 sm:leading-10 md:leading-14">
+        <h1 className="text-2xl leading-9 tracking-tight text-zinc-900 dark:text-zinc-500 sm:leading-10 md:leading-14">
           {title}
         </h1>
         {subtext && (

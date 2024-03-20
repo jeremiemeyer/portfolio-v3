@@ -27,7 +27,7 @@ const ProjectElement = ({
   return (
     <>
       <motion.div
-        className={`relative grid grid-cols-[80%_20%] md:grid-cols-[30%_30%_30%_10%] border-t border-zinc-600 py-2 cursor-pointer font-light`}
+        className={`relative grid grid-cols-[80%_20%] md:grid-cols-[30%_30%_30%_10%] dark:text-zinc-200 border-t border-zinc-600 py-2 cursor-pointer font-light`}
         onMouseEnter={onProjectHover}
         onMouseLeave={onProjectMouseLeave}
         variants={{
@@ -94,7 +94,7 @@ const Projects = () => {
   return (
     <>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-[80%_20%] md:grid-cols-[30%_30%_30%_10%]  text-zinc-400 uppercase text-sm mb-4 px-4 font-light">
+        <div className="grid grid-cols-[80%_20%] md:grid-cols-[30%_30%_30%_10%] text-zinc-500 uppercase text-sm mb-4 px-4">
           <span>Project</span>
           <span className="hidden md:block">Category</span>
           <span className="hidden md:block">Client</span>

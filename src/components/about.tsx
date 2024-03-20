@@ -6,7 +6,7 @@ const About = () => {
   return (
     <MaxWidthWrapper>
       <HeadingText title="About" />
-      <div className="flex flex-col gap-2 font-light">
+      <div className="flex flex-col gap-2 font-light dark:text-zinc-200">
         <p>Hi, I'm Jeremie.</p>
         <p>
           I'm a passionate front-end developer based in France, specializing in
